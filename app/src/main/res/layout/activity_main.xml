@@ -17,11 +17,11 @@
         android:layout_marginRight="8dp"
         android:text="@string/txtJudul1"
         android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnTambah"
+        app:layout_constraintBottom_toTopOf="@+id/btnTambah"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btnTambah"
@@ -32,8 +32,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/btTambah"
-        app:layout_constraintBottom_toTopOf="@+id/btnlihat"
+        app:layout_constraintBottom_toTopOf="@+id/btnLihat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +42,7 @@
         app:layout_constraintVertical_bias="0.252"/>
 
     <Button
-        android:id="@+id/btnlihat"
+        android:id="@+id/btnLihat"
         android:layout_width="234dp"
         android:layout_height="59dp"
         android:layout_marginStart="8dp"
@@ -50,15 +51,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="400dp"
-        android:text="@string/btlihat"
+        android:text="@string/btLihat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTambah"
-        app:layout_constraintVertical_bias="0.0"/>
-
-
-
+        app:layout_constraintVertical_bias="0.0"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

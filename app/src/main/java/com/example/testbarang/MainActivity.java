@@ -1,35 +1,36 @@
 package com.example.testbarang;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-
 public class MainActivity extends AppCompatActivity {
     private Button bTambah;
-    private Button blihat;
+    private Button bLihat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bTambah=(Button) findViewById(R.id.btnTambah);
-        blihat=(Button) findViewById(R.id.btnlihat);
 
-        bTambah.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(TambahData.getActintent(MainActivity.this));
-            }
-        });
+        bTambah = (Button) findViewById(R.id.btnTambah);
+        bLihat = (Button) findViewById(R.id.btnLihat);
 
-        blihat.setOnClickListener(new View.OnClickListener() {
+        bTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //besok dilanjut
+                startActivity(TambahData.getActIntent(MainActivity.this));
             }
         });
+        bLihat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View V) {
+                startActivity(LihatBarang.getActIntent(MainActivity.this));
+
+            }
+        });
+
     }
 }
